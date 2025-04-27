@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joyous Bee - Employee Directory</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff8dc;
+            color: #2c2c2c;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main, footer {
+            text-align: center;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #ffc107;
+            color: #222;
+            border-bottom: 3px solid #ff9800;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        h2 {
+            margin: 0;
+            margin-top: 20px;
+            font-size: 1.8rem;
+            color: #444;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 15px auto;
+        }
+
+        a {
+            color: #ff6f00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #fff3cd;
+            padding: 20px 10px;
+            font-size: 0.9rem;
+            border-top: 2px solid #ffecb3;
+        }
+
+        nav a {
+            margin: 0 10px;
+        }
+
+        em {
+            color: #ff5722;
+            font-style: italic;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            border: 1px solid #ccc;
+        }
+
+        caption {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #ff9800;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #ffeb3b;
+        }
+
+        tfoot {
+            font-weight: bold;
+            background-color: #ffeb3b;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Joyous Bee</h1>
+        <p><em>“Buzzing with power, straight from your laptop!”</em></p>
+    </header>
+
+    <main>
+        <h2>Employee Directory</h2>
+
+        <h3>My Tabular Data</h3>
+        <ol>
+            <li>John Doe - johndoe@joyousbee.com - 5</li>
+            <li>Jane Smith - janesmith@joyousbee.com - 3</li>
+            <li>Michael Johnson - michaelj@joyousbee.com - 8</li>
+            <li>Emily Davis - emilyd@joyousbee.com - 2</li>
+            <li>Chris Lee - chrisl@joyousbee.com - 4</li>
+            <li>Linda Brown - lindab@joyousbee.com - 6</li>
+            <li>David Wilson - davidw@joyousbee.com - 7</li>
+        </ol>
+
+        <h3>Employee Data in Simple Table</h3>
+        <table>
+            <caption>Employee Information</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Years of Service</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>johndoe@joyousbee.com</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>janesmith@joyousbee.com</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Michael Johnson</td>
+                    <td>michaelj@joyousbee.com</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Emily Davis</td>
+                    <td>emilyd@joyousbee.com</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Chris Lee</td>
+                    <td>chrisl@joyousbee.com</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Linda Brown</td>
+                    <td>lindab@joyousbee.com</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>David Wilson</td>
+                    <td>davidw@joyousbee.com</td>
+                    <td>7</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Employee Data in Complex Table</h3>
+        <table>
+            <caption>Employee Information</caption>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Years of Service</th>
+                    <th>Monthly Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Management</td>
+                    <td>John Doe</td>
+                    <td>johndoe@joyousbee.com</td>
+                    <td>5</td>
+                    <td>$5,000</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>janesmith@joyousbee.com</td>
+                    <td>3</td>
+                    <td>$4,500</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Development</td>
+                    <td>Michael Johnson</td>
+                    <td>michaelj@joyousbee.com</td>
+                    <td>8</td>
+                    <td>$6,000</td>
+                </tr>
+                <tr>
+                    <td>Emily Davis</td>
+                    <td>emilyd@joyousbee.com</td>
+                    <td>2</td>
+                    <td>$3,800</td>
+                </tr>
+                <tr>
