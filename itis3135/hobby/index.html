@@ -8,36 +8,13 @@
     <title>My Hobby: Dungeons and Dragons</title>
 
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="https://webpages.charlotte.edu/jbrewe42/itis3135/components/includeHeader.js"></script>
+    <script src="https://webpages.charlotte.edu/jbrewe42/itis3135/components/includeFooter.js"></script>
+    <link rel="stylesheet" href="https://webpages.charlotte.edu/jbrewe42/itis3135/styles/style.css">
     <style>
-        body 
-	{
-            background-color: black;
-            color: #FFC0CB;
-            font-family: Arial, sans-serif, Hashtag;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            text-align: center;        
-	}
-
-        header 
-	{
-            background-color: #333;
-            padding: 1rem;
-            font-size: 1.5rem;
-        }
-
-        nav 
-	{
-            background-color: #444;
-            padding: 1rem;
-        }
-
         nav a 
 	{
-            color: #FFC0CB;
+            color: black;
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
@@ -45,22 +22,22 @@
 
         a 
 	{
-        	color: orange;
+        	color: black;
         	text-decoration: none;
     	}
 
     	a:active 
 	{
-        	color: red;
+        	color: black;
 	}
 
 	a:visited 
 	{
-        	color: yellow; 	}
+        	color: black; 	}
 
 	a:hover 
 	{
-        	color: #FFFFFF;
+        	color: black;
 	}
 
         main 
@@ -95,20 +72,6 @@
         figcaption 
 	{
             font-weight: bold;
-        }
-
-        footer 
-	{
-            background-color: #333;
-            text-align: center;
-            padding: 10px;
-            color: white;
-            position: relative;
-        }
-
-        h1, h2 
-	{
-            color: #FFC0CB;
         }
 
         .nav-links 
@@ -147,13 +110,6 @@
 	{
     		font-weight: bold;
 	}
-
-        footer 
-	{
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
     </style>
 
     <script>
@@ -178,6 +134,7 @@
 <body>
 
     <header>
+        <div id="header-container" data-include="https://webpages.charlotte.edu/jbrewe42/itis3135/scripts/header.html"></div>
         <h1>My Hobby: Dungeons and Dragons</h1>
     </header>
 
@@ -301,9 +258,12 @@
         </section>
     </main>
 
-    <footer>
-        <p>Designed by: <a href="https://webpages.charlotte.edu/jbrewe42/itis3135/designFirm/">Homebrewered Industries</a> &copy; 2025 | All Rights Reserved</p>
-    </footer>
+    <div id="footer-container" data-include="https://webpages.charlotte.edu/jbrewe42/itis3135/scripts/footer.html"></div>
+
+    <script>
+        includeHeader();
+        includeFooter();
+    </script>
 
 </body>
 

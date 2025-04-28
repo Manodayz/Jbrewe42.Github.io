@@ -1,110 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joyous Bee || ITIS 3135</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fdfbee;
-            color: #333;
-        }
-
-        header {
-            background-color: #ffdd57;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #ffe98a;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        footer {
-            background-color: #ffdd57;
-            padding: 20px;
-            text-align: center;
-            font-size: 0.9em;
-        }
-
-        footer a {
-            display: inline-block;
-            margin: 5px 10px;
-            color: #333;
-        }
-
-        #validation-buttons {
-            margin-top: 10px;
-        }
-
-        #validation-buttons a {
-            display: inline-block;
-        }
-    </style>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="https://webpages.charlotte.edu/jbrewe42/itis3135/components/includeHeader.js"></script>
+    <script src="https://webpages.charlotte.edu/jbrewe42/itis3135/components/includeFooter.js"></script>
+    <link rel="stylesheet" href="https://webpages.charlotte.edu/jbrewe42/itis3135/styles/style.css">
 </head>
 <body>
-
-    <header>
-        <h1>Jesse Brewer || ITIS 3135</h1>
-    </header>
-
-    <nav>
-        <a href="https://manodayz.github.io/Jbrewe42.Github.io/itis3135/index.html">Home</a>
-        <a href="introduction.html">Introduction</a>
-        <a href="contract.html">Contract</a>
-    </nav>
+    <div id="header-container" data-include="https://webpages.charlotte.edu/jbrewe42/itis3135/scripts/header.html"></div>
 
     <main>
-        <h2>ITIS 3135 Home</h2>
-        <p>This is all the content for my ITIS 3135 class</p>
-	<p><a href="whimsicalcompany">Whimsical Company</a></p>
+        <h2>Welcome to my page</h2>
+        <p>
+           This is my page for all of my itis3135 projects.
+        </p>
     </main>
 
-    <footer>
-        <p>
-            <a href="https://webpages.charlotte.edu/jbrewe42/" target="_blank">Charlotte.edu</a> |
-            <a href="https://github.com/Manodayz" target="_blank">Github</a> |
-            <a href="https://manodayz.github.io/Jbrewe42.Github.io/itis3135/" target="_blank">Github.io</a> |
-            <a href="https://manodayz.github.io/Jbrewe42.Github.io/itis3135/" target="_blank">itis3135.io</a> |
-            <a href="https://www.freecodecamp.org/Manodayz" target="_blank">FreeCodeCamp</a> |
-            <a href="https://www.codecademy.com/profiles/JesseBrewer" target="_blank">Codecademy</a> |
-            <a href="https://www.linkedin.com/in/jesse-brewer-8b0024329/" target="_blank">LinkedIn</a>
-        </p>
-        <p>Designed by Homebrewered Industries &copy; 2025. Certified in<a href = "https://www.freecodecamp.org/certification/Manodayz/responsive-web-design">Responsive Web Design</a>and<a href="https://www.freecodecamp.org/certification/Manodayz/javascript-algorithms-and-data-structures-v8">JS</a>.</p>
-
-        <div id="validation-buttons">
-            <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
-                <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
-            </a>
-            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
-                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
-            </a>
-        </div>
-    </footer>
+    <div id="footer-container" data-include="https://webpages.charlotte.edu/jbrewe42/itis3135/scripts/footer.html"></div>
 
     <script>
-        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
-        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        includeHeader();
+
+        includeFooter();
     </script>
 
 </body>
